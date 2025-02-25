@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود یا ثبت نام</title>
+    <style>
+        body {
+            font-family: vazirmatn;
+            background-color: #f2f2f2;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 10px auto;
+            padding: 2rem;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            text-align: center;
+            width: 90%;
+            padding: 0.5rem 1rem;
+            font-family: vazirmatn;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .button2 {
+            text-align: center;
+            font-family: vazirmatn;
+            width: 98%;
+            padding: 0.5rem 1rem;
+            background-color: #ff4d4d;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff4d4d;
+        }
+            
+    header {
+        background-color: #ff4d4d;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    
+    header nav ul li a:hover {
+        color: #ffe6e6;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">صفحه اصلی</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+                <li><a href="donate.html">حمایت</a></li>
+                <li><a href="feedback.html">انتقادات و پیشنهادات</a></li>
+                <li style="text-decoration:none;font-family: vazirmatn;">
+                    <a href="sign.html">ورود یا ثبت نام</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>ورود</h1>
+        <form>
+            <input type="text" placeholder="نام کاربری" required>
+            <input type="password" placeholder="رمز عبور" required>
+            <button class="button2" type="submit">ورود</button>
+        </form>
+        <hr>
+        <h1>ثبت نام</h1>
+        <form>
+            <input type="text" placeholder="نام کاربری" required>
+            <input type="email" placeholder="ایمیل" required>
+            <input type="password" placeholder="رمز عبور" required>
+            <button class="button2" type="submit">ثبت نام</button>
+
+        </form>
+    </div>
+</body>
+</html>

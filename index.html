@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه توت فرنگی</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        direction: rtl;
+        font-family: Vazirmatn;
+    }
+    
+    header {
+        background-color: #ff4d4d;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    
+    header nav ul li a:hover {
+        color: #ffe6e6;
+    }
+    
+    main {
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    h1 {
+        color: #ff4d4d;
+    }
+    
+    .featured-products {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .product {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 1rem;
+        width: 200px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .product img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+    
+    .product h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .product button {
+        font-family: vazirmatn;
+        background-color: #ff4d4d;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+    }
+    
+    .product button:hover {
+        background-color: #e63939;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">صفحه اصلی</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+                <li><a href="donate.html">حمایت</a></li>
+                <li><a href="feedback.html">انتقادات و پیشنهادات</a></li>
+                <li style="text-decoration:none;font-family: vazirmatn;">
+                    <a href="sign.html">ورود یا ثبت نام</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>به فروشگاه توت (اهبر) فرنگی خوش آمدید!</h1>
+        <p>اینجا می‌توانید تازه‌ترین و خوشمزه‌ترین توت فرنگی‌ها را پیدا کنید.</p>
+        <h2>🔥محصولات ویژه🔥</h2>
+        <section class="featured-products">
+            <div class="product">
+                <img src="Images/Ahbay.jpg">
+                <h3>اهبر فرنگی تازه</h3>
+                <p>قیمت: ۲۰٬۰۰۰ تومان</p>
+                <button>افزودن به سبد</button>
+            </div>
+            <div class="product">
+                <img src="images/JarAhbay.jpg">
+                <h3>مربای اهبر فرنگی</h3>
+                <p>قیمت: ۱۵٬۰۰۰ تومان</p>
+                <button>افزودن به سبد</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
