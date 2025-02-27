@@ -7,6 +7,11 @@
     font-style: normal;
     font-display: swap;
   }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
     line-height: 1.6;
     margin: 0;
@@ -17,10 +22,16 @@ body {
     font-variant-numeric: contextual;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     background-color: #ff4d4d;
     color: #fff;
-    padding: 1rem 0;
+    padding: 0.3rem 0;
     text-align: center;
 }
 
@@ -28,13 +39,14 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 10rem; /* اضافه کردن این خط برای فاصله از بغل‌ها */
 }
 
 .nav-container {
     display: flex;
     align-items: center;
     width: 100%;
+    border-radius: 15px;
 }
 
 header nav ul {
@@ -54,24 +66,21 @@ header nav ul li a {
 }
 
 .signbutton {
-    background-color: #cd3434;
-    color: #fff;
     border-radius: 15px;
     padding: 0.4rem 0.5rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: box-shadow 0.3s; /* تغییر به هاله */
     text-decoration: none;
     margin-left: auto;
 }
 
-header nav ul li a:hover {
-    color: #ffe6e6;
-}
 
 /* Index Page Styles */
 #index {
     padding: 5px;
+    margin-bottom: 20px;
     text-align: center;
+    flex: 1; /* اضافه کردن این خط برای پر کردن فضای باقی‌مانده */
 }
 
 #index h1 {
@@ -252,11 +261,16 @@ input[type="email"] {
     font-family: 'Vazirmatn';
     width: 98%;
     padding: 0.5rem 1rem;
-    background-color: #ff4d4d;
-    color: #fff;
-    border: none;
+    background-color: #fff; /* تغییر رنگ به سفید */
+    color: #000; /* تغییر رنگ متن به مشکی */
+    border: 1px solid #ddd; /* اضافه کردن حاشیه */
     border-radius: 10px;
     cursor: pointer;
+    transition: box-shadow 0.3s; /* تغییر به هاله */
+}
+
+.sign .button2:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* اضافه کردن هاله */
 }
 
 .sign button:hover {
@@ -311,5 +325,61 @@ input[type="email"] {
 }
 
 .signbutton:hover {
-    background-color: #e63939;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* اضافه کردن هاله */
+}
+
+.footer {
+    background-color: #ff4d4d;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+    margin-top: auto; /* اضافه کردن این خط برای قرار دادن فوتر در پایین صفحه */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem; /* اضافه کردن این خط برای فاصله از لبه‌های صفحه */
+}
+
+.designer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.designer-link {
+    background: #cd3434;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.designer-link span {
+    display: inline-block;
+    max-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #cd3434;
+    border-radius: 5px;
+    transition: max-width 0.5s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.designer-link:hover span {
+    max-width: 200px;
+    padding: 1px 1px;
+}
+
+.copyright {
+    display: flex;
+    font-size: 0.9rem;
 }
