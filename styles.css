@@ -1,11 +1,15 @@
 /* General Styles */
+@font-face {
+    font-family: vazirmatn;
+    src: url(vazirmatn.ttf);
+  }
 body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     direction: rtl;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: "Vazirmatn", sans-serif;
     font-variant-numeric: contextual;
 }
 
@@ -93,7 +97,7 @@ header nav ul li a:hover {
 }
 
 .product button {
-    font-family: vazirmatn;
+    font-family: "vazirmatn";
     background-color: #ff4d4d;
     color: #fff;
     border: none;
@@ -218,7 +222,7 @@ input[type="email"] {
     text-align: center;
     width: 90%;
     padding: 0.5rem 1rem;
-    font-family: vazirmatn;
+    font-family: "vazirmatn";
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -226,7 +230,7 @@ input[type="email"] {
 
 .sign .button2 {
     text-align: center;
-    font-family: vazirmatn;
+    font-family: "vazirmatn";
     width: 98%;
     padding: 0.5rem 1rem;
     background-color: #ff4d4d;
