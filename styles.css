@@ -247,3 +247,53 @@ input[type="email"] {
 .sign button:hover {
     background-color: #ff4d4d;
 }
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #ff4d4d;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 1rem 0;
+    }
+    .signbutton {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.signbutton:hover {
+    background-color: #e63939;
+}

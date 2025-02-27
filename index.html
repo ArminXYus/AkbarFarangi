@@ -18,7 +18,12 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#index" onclick="showSection('index')">صفحه اصلی</a></li>
                 <li><a href="#products" onclick="showSection('products')">محصولات</a></li>
                 <li><a href="#donate" onclick="showSection('donate')">حمایت</a></li>
@@ -122,6 +127,11 @@
                 section.classList.remove('active');
             });
             document.getElementById(id).classList.add('active');
+        }
+
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
         }
     </script>
     
