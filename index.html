@@ -18,21 +18,17 @@
 <body>
     <header>
         <nav>
-            <div class="hamburger" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#index" onclick="showSection('index')">صفحه اصلی</a></li>
+                    <li><a href="#products" onclick="showSection('products')">محصولات</a></li>
+                    <li><a href="#donate" onclick="showSection('donate')">حمایت</a></li>
+                    <li><a href="#feedback" onclick="showSection('feedback')">انتقادات و پیشنهادات</a></li>
+                    <li><a href="#contact" onclick="showSection('contact')">تماس با ما</a></li>
+                    <li><a href="#about" onclick="showSection('about')">درباره ما</a></li>
+                </ul>
+                <a class="signbutton" href="#sign" onclick="showSection('sign')">ورود یا ثبت نام</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#index" onclick="showSection('index')">صفحه اصلی</a></li>
-                <li><a href="#products" onclick="showSection('products')">محصولات</a></li>
-                <li><a href="#donate" onclick="showSection('donate')">حمایت</a></li>
-                <li><a href="#feedback" onclick="showSection('feedback')">انتقادات و پیشنهادات</a></li>
-                <li><a href="#contact" onclick="showSection('contact')">تماس با ما</a></li>
-                <li><a href="#about" onclick="showSection('about')">درباره ما</a></li>
-                <li style="text-decoration:none;font-family: vazirmatn;">
-                    <a class="signbutton" href="#sign" onclick="showSection('sign')">ورود یا ثبت نام</a></li>
-            </ul>
         </nav>
     </header>
 
