@@ -184,9 +184,9 @@ main.index h1 {
     margin-bottom: 20px;
 }
 
-.container.sign input[type="text"],
-.container.sign input[type="password"],
-.container.sign input[type="email"] {
+input[type="text"],
+input[type="password"],
+input[type="email"] {
     text-align: center;
     width: 90%;
     padding: 0.5rem 1rem;
