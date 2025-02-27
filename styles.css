@@ -31,6 +31,15 @@ header nav ul li a {
     font-weight: bold;
     transition: color 0.3s;
 }
+.signbutton{
+    background-color: #cd3434;
+    color: #fff;
+    border-radius: 15px;
+    margin-right: 860px;
+    padding: 0.4rem 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
 header nav ul li a:hover {
     color: #ffe6e6;
