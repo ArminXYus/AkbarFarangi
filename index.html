@@ -5,114 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/Images/favicon.png"/>
     <title>فروشگاه توت فرنگی</title>
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f9f9f9;
-        direction: rtl;
-        font-family: Vazirmatn;
-    }
-    
-    header {
-        background-color: #ff4d4d;
-        color: #fff;
-        padding: 1rem 0;
-        text-align: center;
-    }
-    
-    header nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-    
-    header nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s;
-    }
-    
-    header nav ul li a:hover {
-        color: #ffe6e6;
-    }
-    
-    main {
-        padding: 2rem;
-        text-align: center;
-    }
-    
-    h1 {
-        color: #ff4d4d;
-    }
-    
-    .featured-products {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        margin-top: 2rem;
-    }
-    
-    .product {
-        background: #fff;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        padding: 1rem;
-        width: 200px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-    
-    .product img {
-        width: 100%;
-        border-radius: 5px;
-        margin-bottom: 1rem;
-    }
-    
-    .product h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .product button {
-        font-family: vazirmatn;
-        background-color: #ff4d4d;
-        color: #fff;
-        border: none;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-        border-radius: 10px;
-        transition: background-color 0.3s;
-    }
-    
-    .product button:hover {
-        background-color: #e63939;
-    }
-    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">صفحه اصلی</a></li>
-                <li><a href="about.html">درباره ما</a></li>
-                <li><a href="products.html">محصولات</a></li>
-                <li><a href="contact.html">تماس با ما</a></li>
-                <li><a href="donate.html">حمایت</a></li>
-                <li><a href="feedback.html">انتقادات و پیشنهادات</a></li>
+                <li><a href="#index">صفحه اصلی</a></li>
+                <li><a href="#about">درباره ما</a></li>
+                <li><a href="#products">محصولات</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+                <li><a href="#donate">حمایت</a></li>
+                <li><a href="#feedback">انتقادات و پیشنهادات</a></li>
                 <li style="text-decoration:none;font-family: vazirmatn;">
-                    <a href="sign.html">ورود یا ثبت نام</a></li>
+                    <a href="#sign">ورود یا ثبت نام</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="index">
         <h1>به فروشگاه توت (اهبر) فرنگی خوش آمدید!</h1>
         <p>اینجا می‌توانید تازه‌ترین و خوشمزه‌ترین توت فرنگی‌ها را پیدا کنید.</p>
         <h2>🔥محصولات ویژه🔥</h2>
@@ -132,5 +42,70 @@
         </section>
     </main>
 
+    <main id="about">
+        <h1>درباره ما</h1>
+        <p>فروشگاه اهبر فرنگی با هدف ارائه تازه‌ترین و باکیفیت‌ترین محصولات اهبر فرنگی، مربا و محصولات مرتبط به شما مشتریان گرامی تأسیس شده است. ما با بهره‌گیری از روش‌های مدرن و پایدار کشاورزی تلاش می‌کنیم بهترین تجربه خرید را برای شما فراهم کنیم.</p>
+        <p>ماموریت ما ارائه محصولاتی سالم و طبیعی است که با عشق و دقت تولید شده‌اند. ما از ارتباط مستقیم با کشاورزان محلی اطمینان حاصل می‌کنیم که محصولات با کیفیت بالا و به صورت پایدار به دست شما برسند.</p>
+        <img style="width: 15%;margin-bottom: 1rem;" src="Images/heart.jpg">
+    </main>
+
+    <main id="products">
+        <h1>محصولات ما</h1>
+        <div class="container">
+            <div class="product">
+                <img src="Images/Ahbay.jpg">
+                <h3>اهبر فرنگی تازه</h3>
+                <p>قیمت: ۲۰٬۰۰۰ تومان</p>
+                <button>افزودن به سبد</button>
+            </div>
+            <div class="product">
+                <img src="Images/jar.jpg">
+                <h3>مربای اهبر فرنگی</h3>
+                <p>قیمت: ۱۵٬۰۰۰ تومان</p>
+                <button>افزودن به سبد</button>
+            </div>
+        </div>
+    </main>
+
+    <main id="contact" class="contact">
+        <h1>تماس با ما</h1>
+        <h3>لطفا جهت امر خیر با شماره 
+            <b><div style="color:red;font-size: 30px;"> ۰۹۱۲۳۴۵۶۷۷۸ </div></b></div>
+             تماس بگیرید .
+            </h3>
+            <h3 Style="color: #e63939;">(ترجیحا بانوان)</h3>
+        <img style="width: 35%;border-radius: 5px ; margin-bottom: 1rem;" src="Images/Rel.jpg">
+    </main>
+
+    <main id="donate" class="donate">
+        <h2 Style="color: rgb(255, 0, 0)">آیا میدانید که ؟</h2>
+        <p style="font-size:large ;">سالانه چند تن اهبر جان خود را از دست میدهند تا اهبر فرنگی تازه در سفره های شما باشد ؟</p>
+        <h2 Style="color: purple">#اهبر_ها_هم_دل_دارند</h2>
+        <h2 Style="color: rgb(255, 0, 0)">حامی حقوق اهبر ها باشیم</h2>
+        <img style="width: 35%;border-radius: 5px ; margin-bottom: 1rem;" src="Images/cry.jpg">
+    </main>
+
+    <main id="feedback" class="feedback">
+        <h1>انتقادی دارید ؟</h1>
+        <h2 Style="color: purple">لطفا رو یخ نوشته و جلوی نور خورشید قرار دهید.</h2>
+        <img style="width: 35%;border-radius: 5px ; margin-bottom: 1rem;" src="Images/Rel.jpg">
+    </main>
+
+    <main id="sign" class="sign">
+        <h1>ورود</h1>
+        <form>
+            <input type="text" placeholder="نام کاربری" required>
+            <input type="password" placeholder="رمز عبور" required>
+            <button class="button2" type="submit">ورود</button>
+        </form>
+        <hr>
+        <h1>ثبت نام</h1>
+        <form>
+            <input type="text" placeholder="نام کاربری" required>
+            <input type="email" placeholder="ایمیل" required>
+            <input type="password" placeholder="رمز عبور" required>
+            <button class="button2" type="submit">ثبت نام</button>
+        </form>
+    </main>
 </body>
 </html>

@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    direction: rtl;
+    font-family: 'Vazirmatn', sans-serif;
+    font-variant-numeric: contextual;
+}
+
+header {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffe6e6;
+}
+
+/* About Page Styles */
+main.about {
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    max-width: 1200px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+main.about h1 {
+    color: #ff4d4d;
+    margin-bottom: 1rem;
+}
+
+main.about p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Contact Page Styles */
+main.contact {
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    max-width: 800px;
+    max-height: 800px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+main.contact h3 {
+    color: #e63939;
+}
+
+/* Donate Page Styles */
+main.donate {
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    max-width: 800px;
+    max-height: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+main.donate h2 {
+    color: rgb(255, 0, 0);
+}
+
+/* Feedback Page Styles */
+main.feedback {
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    max-width: 800px;
+    max-height: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+main.feedback h1 {
+    color: #ff4d4d;
+}
+
+/* Index Page Styles */
+main.index {
+    padding: 2rem;
+    text-align: center;
+}
+
+main.index h1 {
+    color: #ff4d4d;
+}
+
+.featured-products {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product button {
+    font-family: vazirmatn;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #e63939;
+}
+
+/* Products Page Styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sign Page Styles */
+.container.sign {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container.sign h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container.sign input[type="text"],
+.container.sign input[type="password"],
+.container.sign input[type="email"] {
+    text-align: center;
+    width: 90%;
+    padding: 0.5rem 1rem;
+    font-family: vazirmatn;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.container.sign .button2 {
+    text-align: center;
+    font-family: vazirmatn;
+    width: 98%;
+    padding: 0.5rem 1rem;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container.sign button:hover {
+    background-color: #ff4d4d;
+}
