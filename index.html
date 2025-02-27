@@ -6,28 +6,36 @@
     <link rel="icon" type="image/png" href="/Images/favicon.png"/>
     <link rel="stylesheet" href="styles.css">
     <title>فروشگاه توت فرنگی</title>
+    <style>
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#index">صفحه اصلی</a></li>
-                <li><a href="#about">درباره ما</a></li>
-                <li><a href="#products">محصولات</a></li>
-                <li><a href="#contact">تماس با ما</a></li>
-                <li><a href="#donate">حمایت</a></li>
-                <li><a href="#feedback">انتقادات و پیشنهادات</a></li>
+                <li><a href="#index" onclick="showSection('index')">صفحه اصلی</a></li>
+                <li><a href="#about" onclick="showSection('about')">درباره ما</a></li>
+                <li><a href="#products" onclick="showSection('products')">محصولات</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">تماس با ما</a></li>
+                <li><a href="#donate" onclick="showSection('donate')">حمایت</a></li>
+                <li><a href="#feedback" onclick="showSection('feedback')">انتقادات و پیشنهادات</a></li>
                 <li style="text-decoration:none;font-family: vazirmatn;">
-                    <a href="#sign">ورود یا ثبت نام</a></li>
+                    <a href="#sign" onclick="showSection('sign')">ورود یا ثبت نام</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="index">
+    <section id="index" class="active">
         <h1>به فروشگاه توت (اهبر) فرنگی خوش آمدید!</h1>
         <p>اینجا می‌توانید تازه‌ترین و خوشمزه‌ترین توت فرنگی‌ها را پیدا کنید.</p>
         <h2>🔥محصولات ویژه🔥</h2>
-        <section class="featured-products">
+        <div class="featured-products">
             <div class="product">
                 <img src="Images/Ahbay.jpg">
                 <h3>اهبر فرنگی تازه</h3>
@@ -40,17 +48,17 @@
                 <p>قیمت: ۱۵٬۰۰۰ تومان</p>
                 <button>افزودن به سبد</button>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <main id="about">
+    <section id="about">
         <h1>درباره ما</h1>
         <p>فروشگاه اهبر فرنگی با هدف ارائه تازه‌ترین و باکیفیت‌ترین محصولات اهبر فرنگی، مربا و محصولات مرتبط به شما مشتریان گرامی تأسیس شده است. ما با بهره‌گیری از روش‌های مدرن و پایدار کشاورزی تلاش می‌کنیم بهترین تجربه خرید را برای شما فراهم کنیم.</p>
         <p>ماموریت ما ارائه محصولاتی سالم و طبیعی است که با عشق و دقت تولید شده‌اند. ما از ارتباط مستقیم با کشاورزان محلی اطمینان حاصل می‌کنیم که محصولات با کیفیت بالا و به صورت پایدار به دست شما برسند.</p>
         <img style="width: 15%;margin-bottom: 1rem;" src="Images/heart.jpg">
-    </main>
+    </section>
 
-    <main id="products">
+    <section id="products">
         <h1>محصولات ما</h1>
         <div class="container">
             <div class="product">
@@ -66,9 +74,9 @@
                 <button>افزودن به سبد</button>
             </div>
         </div>
-    </main>
+    </section>
 
-    <main id="contact" class="contact">
+    <section id="contact" class="contact">
         <h1>تماس با ما</h1>
         <h3>لطفا جهت امر خیر با شماره 
             <b><div style="color:red;font-size: 30px;"> ۰۹۱۲۳۴۵۶۷۷۸ </div></b></div>
@@ -76,23 +84,23 @@
             </h3>
             <h3 Style="color: #e63939;">(ترجیحا بانوان)</h3>
         <img style="width: 35%;border-radius: 5px ; margin-bottom: 1rem;" src="Images/Rel.jpg">
-    </main>
+    </section>
 
-    <main id="donate" class="donate">
+    <section id="donate" class="donate">
         <h2 Style="color: rgb(255, 0, 0)">آیا میدانید که ؟</h2>
         <p style="font-size:large ;">سالانه چند تن اهبر جان خود را از دست میدهند تا اهبر فرنگی تازه در سفره های شما باشد ؟</p>
         <h2 Style="color: purple">#اهبر_ها_هم_دل_دارند</h2>
         <h2 Style="color: rgb(255, 0, 0)">حامی حقوق اهبر ها باشیم</h2>
         <img style="width: 35%;border-radius: 5px ; margin-bottom: 1rem;" src="Images/cry.jpg">
-    </main>
+    </section>
 
-    <main id="feedback" class="feedback">
+    <section id="feedback" class="feedback">
         <h1>انتقادی دارید ؟</h1>
         <h2 Style="color: purple">لطفا رو یخ نوشته و جلوی نور خورشید قرار دهید.</h2>
         <img style="width: 35%;border-radius: 5px ; margin-bottom: 1rem;" src="Images/Rel.jpg">
-    </main>
+    </section>
 
-    <main id="sign" class="sign">
+    <section id="sign" class="sign">
         <h1>ورود</h1>
         <form>
             <input type="text" placeholder="نام کاربری" required>
@@ -107,6 +115,15 @@
             <input type="password" placeholder="رمز عبور" required>
             <button class="button2" type="submit">ثبت نام</button>
         </form>
-    </main>
+    </section>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
 </body>
 </html>
