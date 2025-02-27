@@ -6,12 +6,14 @@
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
-  }
+}
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
+
 body {
     line-height: 1.6;
     margin: 0;
@@ -39,14 +41,13 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10rem; /* اضافه کردن این خط برای فاصله از بغل‌ها */
+    padding: 0 1rem;
 }
 
 .nav-container {
     display: flex;
     align-items: center;
     width: 100%;
-    border-radius: 15px;
 }
 
 header nav ul {
@@ -66,21 +67,27 @@ header nav ul li a {
 }
 
 .signbutton {
+    background-color: #fff;
+    color: #000;
     border-radius: 15px;
     padding: 0.4rem 0.5rem;
     cursor: pointer;
-    transition: box-shadow 0.3s; /* تغییر به هاله */
+    transition: box-shadow 0.3s;
     text-decoration: none;
     margin-left: auto;
+    border: 1px solid #ddd;
 }
 
+.signbutton:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 /* Index Page Styles */
 #index {
     padding: 5px;
     margin-bottom: 20px;
     text-align: center;
-    flex: 1; /* اضافه کردن این خط برای پر کردن فضای باقی‌مانده */
+    flex: 1;
 }
 
 #index h1 {
@@ -88,11 +95,11 @@ header nav ul li a {
     text-align: center;
     font-size: xx-large;
 }
+
 #index p {
     text-align: center;
     margin: 10px;
 }
-
 
 .featured-products {
     display: flex;
@@ -144,11 +151,13 @@ header nav ul li a {
     padding: 20px;
     text-align: center;
 }
+
 #products h1 {
     color: #ff4d4d;
     text-align: center;
     font-size: xx-large;
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -172,7 +181,6 @@ header nav ul li a {
     color: #ff4d4d;
     margin-bottom: 1rem;
     font-size: xx-large;
-
 }
 
 #about p {
@@ -180,7 +188,6 @@ header nav ul li a {
     justify-content: center;
     text-align: center;
 }
-
 
 /* Contact Page Styles */
 .contact {
@@ -193,7 +200,6 @@ header nav ul li a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
-
 
 /* Donate Page Styles */
 .donate {
@@ -261,16 +267,16 @@ input[type="email"] {
     font-family: 'Vazirmatn';
     width: 98%;
     padding: 0.5rem 1rem;
-    background-color: #fff; /* تغییر رنگ به سفید */
-    color: #000; /* تغییر رنگ متن به مشکی */
-    border: 1px solid #ddd; /* اضافه کردن حاشیه */
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
     border-radius: 10px;
     cursor: pointer;
-    transition: box-shadow 0.3s; /* تغییر به هاله */
+    transition: box-shadow 0.3s;
 }
 
 .sign .button2:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* اضافه کردن هاله */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .sign button:hover {
@@ -300,32 +306,8 @@ input[type="email"] {
     flex-grow: 1;
 }
 
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        background-color: #ff4d4d;
-    }
-    .nav-links.active {
-        display: flex;
-    }
-    .nav-links li {
-        margin: 1rem 0;
-    }
-    .signbutton {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
-    }
-}
-
 .signbutton:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* اضافه کردن هاله */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
@@ -333,7 +315,7 @@ input[type="email"] {
     padding: 8px;
     text-align: center;
     color: #fff;
-    margin-top: auto; /* اضافه کردن این خط برای قرار دادن فوتر در پایین صفحه */
+    margin-top: auto;
 }
 
 .footer-container {
@@ -342,7 +324,7 @@ input[type="email"] {
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 1rem; /* اضافه کردن این خط برای فاصله از لبه‌های صفحه */
+    padding: 0 1rem;
 }
 
 .designer {
@@ -382,4 +364,63 @@ input[type="email"] {
 .copyright {
     display: flex;
     font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav {
+        padding: 0 1rem;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #ff4d4d;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .signbutton {
+        margin-left: 0;
+        width: 10%;
+        text-align: center;
+    }
+
+    .featured-products {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .designer-link {
+        padding: 5px 10px;
+    }
+
+    .designer {
+        font-size: 0.8rem;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 }
