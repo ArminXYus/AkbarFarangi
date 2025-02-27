@@ -33,7 +33,7 @@ body {
 header {
     background-color: #ff4d4d;
     color: #fff;
-    padding: 0.3rem 0;
+    padding: 0.2rem 0;
     text-align: center;
 }
 
@@ -67,20 +67,15 @@ header nav ul li a {
 }
 
 .signbutton {
-    background-color: #fff;
-    color: #000;
-    border-radius: 15px;
+    background-color: transparent;
+    border: none;
+    align-items: center;
     padding: 0.4rem 0.5rem;
     cursor: pointer;
-    transition: box-shadow 0.3s;
-    text-decoration: none;
     margin-left: auto;
-    border: 1px solid #ddd;
+    transition: none;
 }
 
-.signbutton:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 
 /* Index Page Styles */
 #index {
